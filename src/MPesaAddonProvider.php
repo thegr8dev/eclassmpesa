@@ -28,7 +28,9 @@ class MPesaAddonProvider extends ServiceProvider
         $this->loadMigrationsFrom(__DIR__.'/database/migrations/');
 
         $this->publishes([
-            __DIR__.'/views' => resource_path('views/vendor/eclassmpesa'),
+            __DIR__.'/views/other' => resource_path('views/vendor/eclassmpesa'),
+            __DIR__.'/views/admin/sidebar' => resource_path('views/admin/layouts'),
+            __DIR__.'/views/front' => resource_path('views/front'),
             __DIR__.'/database/migrations/' => database_path('migrations'),
             __DIR__.'/images' => public_path('images/payment'),
             __DIR__.'/assets/js' => public_path('js'),

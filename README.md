@@ -1,6 +1,6 @@
-##Eclass Mpesa Add On Installing and Setup Wizard
+#Eclass Mpesa Add On Installing and Setup Wizard
 
-###### #Before installing this package make sure [smodav/mpesa](https://github.com/SmoDav/mpesa) is installed.
+#####Before installing this package make sure [smodav/mpesa](https://github.com/SmoDav/mpesa) is installed.
 
 ### Requirements
 
@@ -11,8 +11,8 @@
 
 Run the package using follwing command : 
 
-**`composer require eclass/eclassmpesa`
-**
+`composer require eclass/eclassmpesa`
+
 After install the package add following variables in .env file of your script
 
 Open** .env** file and add this:
@@ -61,7 +61,7 @@ After successully add above things run the following url **(*Make sure you logge
 
 If everything looks good you will be redirected to the mPesa Settings on admin dashboard update the keys and other things and save setting.
 
-Wohoo ! You Successfully installed the Mpesa Add On your eClass.
+**Wohoo ! You Successfully installed the Mpesa Add On your eClass.**
 
 ### Update FAQ.
 
@@ -69,8 +69,9 @@ Wohoo ! You Successfully installed the Mpesa Add On your eClass.
 ** 
 Well add-on will ve updated time to time and you should keep eye on the addon page by bookmarking it. if a new update came just hit follwing command. new version will be released with new version tag.
 
-**`composer update`
-** on your project root directory.
+`composer update`
+
+**on your project root directory**.
 
 
 

@@ -49,7 +49,7 @@ class PayPesaController extends Controller
             $y = json_encode($response);
             $res = json_decode($y,true);
             $checkoutid = $res['CheckoutRequestID'];
-            return view('eclassmpesa::mpesawait',compact('checkoutid'));
+            return view('eclassmpesa::other.mpesawait',compact('checkoutid'));
         }catch(\Exception $e){
               return redirect('/all/cart')->with('delete',$e->getMessage());
         }
@@ -272,7 +272,7 @@ class PayPesaController extends Controller
     }
 
     public function adminsettings(){
-        return view('eclassmpesa::mpesasetting');
+        return view('eclassmpesa::other.mpesasetting');
     }
 
     public function updatesetting(Request $request){
