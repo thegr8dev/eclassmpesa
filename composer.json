@@ -1,0 +1,27 @@
+{
+    "name": "thegr8dev/eclassmpesa",
+    "description": "This is additional addon which add mpesa(safaricom) payment gateway for eclass",
+    "type": "library",
+    "require": {
+        "smodav/mpesa": "dev-master"
+    },
+    "authors": [
+        {
+            "name": "Mediacity",
+            "email": "info@mediacity.co.in"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Thegr8dev\\Eclassmpesa\\" : "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Thegr8dev\\Eclassmpesa\\MPesaAddonProvider"
+            ]
+        }
+    }
+}
