@@ -64,8 +64,8 @@ Remove **public**  if your domain not have in url.
 
 ### Update FAQ.
 
-**Q. What if new update came?
-** 
+**Q. What if new update came?** 
+
 Well add-on will ve updated time to time and you should keep eye on the addon page by bookmarking it. if a new update came just hit follwing command. new version will be released with new version tag.
 
 `composer update`
