@@ -9,11 +9,15 @@
 
 ### Installation 
 
-Run the package using follwing command : 
+Run the package using follwing command: 
 
 `composer require eclass/eclassmpesa`
 
-After install the package add following variables in .env file of your script
+After successully install add run the following command:
+
+`php artisan eclassmpesa:install`
+
+After run the command add following variables in .env file of your script
 
 Open** .env** file and add this:
 
@@ -55,11 +59,6 @@ Your mpesa callback url will be :
 
 Remove **public**  if your domain not have in url.
 
-After successully add above things run the following url **(*Make sure you logged in as admin already if not than login and than run the follwing url)***
-
-**`https://yourdomain.com/public/admin/addonmpesa`**
-
-If everything looks good you will be redirected to the mPesa Settings on admin dashboard update the keys and other things and save setting.
 
 **Wohoo ! You Successfully installed the Mpesa Add On your eClass.**
 
