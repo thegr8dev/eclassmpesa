@@ -3,6 +3,7 @@
 namespace Thegr8dev\Eclassmpesa;
 
 use Illuminate\Support\ServiceProvider;
+use Thegr8dev\Eclassmpesa\Console\elcassmpesa;
 
 class MPesaAddonProvider extends ServiceProvider
 {
@@ -23,6 +24,12 @@ class MPesaAddonProvider extends ServiceProvider
      */
     public function boot()
     {
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                elcassmpesa::class,
+            ]);
+        }
+
         $this->loadRoutesFrom(__DIR__.'/routes/web.php');
         $this->loadViewsFrom(__DIR__.'/views','eclassmpesa');
         $this->loadMigrationsFrom(__DIR__.'/database/migrations/');

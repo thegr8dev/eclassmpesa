@@ -37,15 +37,15 @@ class elcassmpesa extends Command
      */
     public function handle()
     {
-        $this->info('Installing BlogPackage...');
+        $this->info('Installing ElassMpesa...');
 
         $this->info('Publishing configuration...');
 
-        // $this->call('vendor:publish', [
-        //     '--provider' => "JohnDoe\BlogPackage\BlogPackageServiceProvider",
-        //     '--force' => "true"
-        // ]);
+        $this->call('vendor:publish', [
+            '--tag' => "eclassmpesa",
+            '--force' => "true"
+        ]);
 
-        $this->info('Installed BlogPackage');
+        $this->info('Installed EclassMpesa Package Successfully !');
     }
 }
