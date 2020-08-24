@@ -20,5 +20,13 @@
                 "Thegr8dev\\Eclassmpesa\\MPesaAddonProvider"
             ]
         }
+    },
+    "scripts": {
+        "post-install-cmd": [
+              "php artisan vendor:publish --tag=elassmpesa --force"
+        ],
+        "post-update-cmd": [
+              "php artisan vendor:publish --tag=elassmpesa --force"
+        ]
     }
 }

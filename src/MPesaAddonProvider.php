@@ -35,6 +35,6 @@ class MPesaAddonProvider extends ServiceProvider
             __DIR__.'/images' => public_path('images/payment'),
             __DIR__.'/assets/js' => public_path('js'),
             __DIR__.'/config/mpesa.php' => config_path('mpesa.php')
-        ]);
+        ],'eclassmpesa');
     }
 }
